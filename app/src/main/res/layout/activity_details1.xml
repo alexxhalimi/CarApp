@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    app:cardElevation="0dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/imageViewDetails"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/carpic"
+                        app:civ_border_color="#FF000000" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:cardElevation="0dp">
+
+                    <TextView
+                        android:id="@+id/detailsbrand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAD6D6"
+                        android:text="brand"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="25dp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardElevation="0dp">
+
+                    <TextView
+                        android:id="@+id/detailsLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAD6D6"
+                        android:text="model"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="25dp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardElevation="0dp">
+
+                    <TextView
+                        android:id="@+id/detailsMobileNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAD6D6"
+                        android:text="year"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="25dp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardElevation="0dp">
+
+                    <TextView
+                        android:id="@+id/detailsEmailId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#DAD6D6"
+                        android:text="price"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="25dp" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            app:fabSize="normal"
+            android:backgroundTint="#0077CC"
+            android:id="@+id/saveFlaotingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/edit1"/>
+    </LinearLayout>
+</RelativeLayout>
